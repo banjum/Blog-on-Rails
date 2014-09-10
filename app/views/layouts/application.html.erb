@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog On Rails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <meta name = "description" content = "A simple web application project, blog, to learn the Ruby on Rails framework.">
+  <meta name = "author" content = "Bushra Anjum">
+  <meta name = "keywords" content = "Ruby, Rails, Bushra Anjum">
+  
+</head>
+<body>
+	<div id="templatemo_container">
+		<div id="templatemo_banner">
+			<div id="logo"></div>
+		</div>
+		
+		<div id="templatemo_content">
+			<%= yield %>
+		</div>
+	
+	
+		<div id="templatemo_footer"></div>
+	</div>
+	
+	<div class="footer">This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div>
+</body>
+</html>

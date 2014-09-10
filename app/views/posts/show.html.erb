@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p class="ptitle">
+  <%= @post.title %>
+</p>
+
+<br />
+
+<p class="pbody">
+  <%= @post.body %>
+</p>
+
+<div class="margin_bottom_20 h_divider"></div>        
+
+<h2>Comments</h2>
+<div id="comments">
+	<%= render :partial => @post.comments.reverse %>
+</div>
+	
+<br />
+<br />
+
+
+  
+  
+<%= form_for([@post, Comment.new], remote: true) do |f| %>
+
+	<p>
+		<%= f.label :body, "New Comment" %> <br />
+		<%= f.text_area :body, {:class=>"text_area"} %>
+	</p>
+	<br />
+	<p><%= f.submit "Add Comment" %></p>
+	<br />
+	<br />
+<% end %>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
