@@ -9,6 +9,16 @@ an appropriately configured middleware,
 along with the code for displaying blog posts and comments in a user's browser. 
 That is, it is an example of a "full stack" web application.
 
+#### Code provides good working examples of:
+* ActiveRecord Design Pattern
+* Relational Database
+* Model View Controller Design Pattern
+* Rails Classes and Inheritance
+* Rails Objects, Collections, Blocks and Iterators
+* RACK middleware (HTTP request response)
+* CSS with Rails framework
+* JQuery and AJAX with Rails framework
+
 
 ## Installation Instructions
 In	this	section	I	will	detail	the	most	important	software	products	and	tools	that	I	
